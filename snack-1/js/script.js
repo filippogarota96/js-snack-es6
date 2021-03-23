@@ -3,22 +3,22 @@
 const bici = [
   {
     nome:'Trek',
-    peso: 5000
+    peso: 5
   },
 
   {
     nome:'Giant',
-    peso: 8000
+    peso: 8
   },
 
   {
     nome:'Atala',
-    peso: 3000
+    peso: 3
   },
 
   {
     nome:'Santa Cruz',
-    peso: 6000,
+    peso: 6,
   }
 ];
 console.log(bici);
@@ -27,6 +27,6 @@ let biciLeggera = bici[0];
 for (var i = 0; i < bici.length; i++) {
   if (bici[i].peso < biciLeggera.peso) {
     biciLeggera = bici[i];
-    console.log(`${biciLeggera.nome} è la bici più leggera`);
   }
 }
+console.log(`${biciLeggera.nome} è la bici più leggera, peso: ${biciLeggera.peso} kg`);
